@@ -134,7 +134,7 @@ do_view_cmd (gboolean normal)
 
         if (confirm_view_dir && (current_panel->marked || current_panel->dirs_marked))
         {
-            if (query_dialog
+            if (
                 (_("Confirmation"), _("Files tagged, want to cd?"), D_NORMAL, 2,
                  _("&Yes"), _("&No")) != 0)
             {
@@ -1326,6 +1326,18 @@ void
 user_file_menu_cmd (void)
 {
     (void) user_menu_cmd (NULL, NULL, -1);
+}
+
+void
+my_function (void) // změna
+{
+
+    char host[BUF_TINY];
+
+    gethostname (host, sizeof (host));
+    query_dialog (_("The Midnight Commander"),
+                               _(host),
+                               D_NORMAL, 2, _("&Yes"), _("&No"));
 }
 
 /* --------------------------------------------------------------------------------------------- */

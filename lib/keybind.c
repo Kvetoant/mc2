@@ -80,6 +80,7 @@ static name_keymap_t command_names[] = {
     {"Clear", CK_Clear},
     {"Menu", CK_Menu},
     {"MenuLastSelected", CK_MenuLastSelected},
+    {"MyItem", CK_My_item}, //změna
     {"UserMenu", CK_UserMenu},
     {"EditUserMenu", CK_EditUserMenu},
     {"Search", CK_Search},
